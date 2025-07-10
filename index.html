@@ -11,7 +11,7 @@
         <div class="container">
             <h1>Cerita dari Emoji</h1>
             <nav>
-                <button id="theme-toggle">Mode Gelap/Terang</button>
+                <button id="theme-toggle">Mode Gelap</button>
                 <button id="about-button">Tentang</button>
             </nav>
         </div>
@@ -24,12 +24,12 @@
                 <input type="text" id="emoji-search" placeholder="Cari emoji...">
             </div>
             <div id="emoji-categories">
-                <!-- Kategori akan ditambahkan oleh JS atau bisa hardcode sederhana -->
                 <button class="category-button active" data-category="all">Semua</button>
                 <button class="category-button" data-category="smileys">Senyum & Orang</button>
                 <button class="category-button" data-category="animals">Hewan & Alam</button>
                 <button class="category-button" data-category="food">Makanan & Minuman</button>
-                <!-- Tambahkan kategori lain jika perlu -->
+                <button class="category-button" data-category="objects">Objek</button>
+                <button class="category-button" data-category="travel">Perjalanan</button>
             </div>
             <div id="emoji-grid">
                 <!-- Emoji akan dimuat di sini oleh JavaScript -->
@@ -51,7 +51,6 @@
         <section id="story-result-area">
             <h3>Ceritamu:</h3>
             <div id="story-output" aria-live="polite">
-                <!-- Cerita yang dihasilkan akan ditampilkan di sini -->
                 <p>Pilih 3 hingga 5 emoji dan klik "Buat Cerita!" untuk melihat keajaiban!</p>
             </div>
             <button id="copy-story-button" style="display: none;">Salin Cerita</button>
@@ -71,6 +70,7 @@
             <h2>Tentang Cerita dari Emoji</h2>
             <p>Aplikasi web ini memungkinkan Anda membuat cerita pendek dan unik berdasarkan emoji yang Anda pilih. Pilih 3 hingga 5 emoji favoritmu dan biarkan imajinasi (dan sedikit bantuan AI) membawa Anda dalam sebuah petualangan!</p>
             <p>Proyek ini adalah demonstrasi bagaimana teknologi AI dapat digunakan untuk kreativitas dan hiburan.</p>
+            <p><strong>Teknologi yang digunakan:</strong> HTML, CSS, JavaScript, Node.js, Express.js, Google Gemini API.</p>
         </div>
     </div>
 
