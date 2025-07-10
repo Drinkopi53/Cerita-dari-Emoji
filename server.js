@@ -34,7 +34,7 @@ if (!GEMINI_API_KEY) {
     // process.exit(1); // Pertimbangkan untuk menghentikan server jika API Key tidak ada
 }
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 app.post('/api/generate-story', async (req, res) => {
     const { emojis } = req.body;
