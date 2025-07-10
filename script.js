@@ -178,8 +178,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (copyStoryButton) copyStoryButton.style.display = 'none';
             if (newStoryButton) newStoryButton.style.display = 'none';
 
+            // Gunakan URL absolut ke server backend
+            const backendUrl = 'http://localhost:3000/api/generate-story';
+            // Jika server Anda berjalan di port berbeda, sesuaikan '3000' di atas.
+
             try {
-                const response = await fetch('/api/generate-story', {
+                const response = await fetch(backendUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
